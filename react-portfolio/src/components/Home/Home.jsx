@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoTitle from '../../assets/images/logo-s.png'
@@ -7,7 +7,25 @@ import { Logo } from './Logo/Logo'
 
 export const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['u', 't', 'e', 'e', ' ', 'M', 'a', 'h','a','w','i','s','e','t','s','i','l']
+  const nameArray = [
+    'u',
+    't',
+    'e',
+    'e',
+    ' ',
+    'M',
+    'a',
+    'h',
+    'a',
+    'w',
+    'i',
+    's',
+    'e',
+    't',
+    's',
+    'i',
+    'l',
+  ]
   const jobArray = [
     'w',
     'e',
@@ -25,11 +43,11 @@ export const Home = () => {
     '.',
   ]
 
-  useEffect(() =>{
-    setTimeout(function(){
-        setLetterClass('text-animate-hover')
-   }, 5000);
-},[])
+  useEffect(() => {
+    setTimeout(function () {
+      setLetterClass('text-animate-hover')
+    }, 5000)
+  }, [])
 
   return (
     <Container className="container">

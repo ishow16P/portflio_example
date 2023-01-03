@@ -37,8 +37,8 @@ export const Logo = () => {
   }, [])
 
   return (
-    <Container ref={bgRef}>
-   <img
+    <Container className="logo-container" ref={bgRef}>
+      <img
         className="solid-logo"
         ref={solidLogoRef}
         src={LogoImage}
@@ -83,7 +83,7 @@ const Container = styled.div`
     width: 100%;
     height: auto;
     bottom: 0;
-    transform: rotateZ(30deg) !important;
+    transform: rotateZ(20deg) !important;
   }
 
   .solid-logo {
@@ -95,7 +95,7 @@ const Container = styled.div`
     margin: auto;
     width: 100%;
     opacity: 0;
-    transform: rotateZ(30deg) !important;
+    transform: rotateZ(20deg) !important;
     z-index: 1;
   }
 
